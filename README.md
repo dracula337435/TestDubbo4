@@ -2,7 +2,8 @@
 
 ## 主要目的
 
-1. dubbo和spring-boot
+1. dubbo和spring-boot  
+提供方+actuator，后来使用@DubboComponentScan，定义好@Configuration中的application和registry后消费方搞定
 
 ## 踩坑
 
