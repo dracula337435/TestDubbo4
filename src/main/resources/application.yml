@@ -1,0 +1,35 @@
+# Spring boot application
+spring:
+  application:
+    name: dubbo-provider-demo
+
+server:
+  port: 9090
+
+management:
+  server:
+    port: 9091
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    dubbo-shutdown:
+      enabled: true
+    dubbo-services:
+      enabled: true
+    dubbo-references:
+      enabled: true
+
+# Dubbo Config properties
+dubbo:
+  # ApplicationConfig Bean
+  application:
+    name: dubbo-provider-demo
+  # ProtocolConfig Bean
+  protocol:
+    name: dubbo
+    port: 20880
+  # RegistryConfig Bean
+  registry:
+    address: zookeeper://127.0.0.1:2181
