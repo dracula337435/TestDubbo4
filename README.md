@@ -7,5 +7,5 @@
 
 ## 踩坑
 
-1. yaml文件不行，properties文件可以。两文件可以共存。优先级，还没试  
-试了试，dubbo.scan.basePackages不能放入yaml，其他几个（application, registry, protocol）可以放入yaml
+1. yaml文件有些配置不生效，properties文件中暂未发现。两文件可以共存。优先级，还没试  
+试了试，dubbo.scan.basePackages放入yaml无效，其他几个（application, registry, protocol）放入yaml有效
