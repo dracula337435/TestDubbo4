@@ -14,17 +14,6 @@
         <version>2.0.5.RELEASE</version>
     </parent>
 
-    <properties>
-        <java.version>1.8</java.version>
-        <mvn-compiler-plugin.source>
-            ${java.version}
-        </mvn-compiler-plugin.source>
-        <mvn-compiler-plugin.target>
-            ${mvn-compiler-plugin.source}
-        </mvn-compiler-plugin.target>
-        <global.encoding>UTF-8</global.encoding>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -54,33 +43,5 @@
             <version>0.2.0</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <!-- jdk版本，encoding -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>${mvn-compiler-plugin.source}</source>
-                    <target>${mvn-compiler-plugin.target}</target>
-                    <encoding>${global.encoding}</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <configuration>
-                    <!-- spring-boot的parent-pom中改了${}为@，但是“@”不行，改一下。 -->
-                    <!-- 或者useDefaultDelimiters，还是用 -->
-                    <!--<delimiters>-->
-                    <!--<delimiter>@{*}</delimiter>-->
-                    <!--</delimiters>-->
-                    <useDefaultDelimiters>true</useDefaultDelimiters>
-                    <encoding>${global.encoding}</encoding>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
