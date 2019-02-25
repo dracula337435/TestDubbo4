@@ -1,6 +1,6 @@
 package org.dracula.test.dubbo.test4.provider;
 
-import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
+import org.apache.dubbo.config.spring.context.annotation.DubboComponentScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

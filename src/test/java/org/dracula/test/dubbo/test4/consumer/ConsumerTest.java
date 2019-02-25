@@ -1,9 +1,9 @@
 package org.dracula.test.dubbo.test4.consumer;
 
-import com.alibaba.dubbo.config.ApplicationConfig;
-import com.alibaba.dubbo.config.RegistryConfig;
-import com.alibaba.dubbo.config.annotation.Reference;
-import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
+import org.apache.dubbo.config.ApplicationConfig;
+import org.apache.dubbo.config.RegistryConfig;
+import org.apache.dubbo.config.annotation.Reference;
+import org.apache.dubbo.config.spring.context.annotation.DubboComponentScan;
 import org.dracula.test.dubbo.test4.TestInterface;
 import org.junit.Test;
 import org.junit.runner.RunWith;

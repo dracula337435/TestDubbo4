@@ -1,6 +1,6 @@
 package org.dracula.test.dubbo.test4.provider;
 
-import com.alibaba.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.Service;
 import org.dracula.test.dubbo.test4.TestInterface;
 
 /**
