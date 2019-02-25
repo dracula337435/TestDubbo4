@@ -10,10 +10,10 @@ import org.junit.runner.RunWith;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = ConsumerTest.TmpConfig.class)
+@RunWith(SpringRunner.class)
+@ContextConfiguration
 public class ConsumerTest {
 
     @Reference
@@ -25,8 +25,8 @@ public class ConsumerTest {
     }
 
     @Configuration
-    @DubboComponentScan("org.dracula.test.dubbo.test4.consumer")
-    public static class TmpConfig{
+    @DubboComponentScan
+    public static class Config {
 
         @Bean
         public ApplicationConfig applicationConfig(){
