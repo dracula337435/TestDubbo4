@@ -38,7 +38,7 @@ public class ConsumerTest {
         @Bean
         public RegistryConfig registryConfig(){
             RegistryConfig registryConfig = new RegistryConfig();
-            registryConfig.setAddress("zookeeper://127.0.0.1:2181");
+            registryConfig.setAddress("multicast://224.5.6.7:1234");
             return registryConfig;
         }
 
