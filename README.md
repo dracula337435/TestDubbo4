@@ -5,6 +5,7 @@
 1. dubbo和spring-boot  
 后来使用@DubboComponentScan，定义好@Configuration中的application和registry后消费方搞定
 1. actuator
+默认地址均有```/actuator```前缀，如```/actuator/dubbo```，也可访问```/actuator```查看所有可用断点  
 提供方+actuator，几个端点的名字及对应地址如下
 
 |        端点名       |地址（省略/actuator前缀）|
@@ -41,3 +42,5 @@ management:
 
 1. dubbo的@Service注解不需要@Component，见```TestInterfaceImpl```类，只有dubbo的@Service而没有@Component，
 但是```TestScan```类中的TestInterface类型属性却可以成功注入
+
+1. ```rest```这样配暂时不好使，至少还缺```ws```系列
